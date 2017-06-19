@@ -1,0 +1,23 @@
+<h2>Number of high alerts for all vehicles</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Vin</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Redline Rpm</th>
+        <th>Max Fuel Volume</th>
+        <th>High Alerts Count</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="vehicle in vehicles | orderBy:'hightAlertCount'">
+        <td>{{vehicle.vin}}</td>
+        <td>{{vehicle.make}}</td>
+        <td>{{vehicle.model}}</td>
+        <td>{{vehicle.redlineRpm}}</td>
+        <td>{{vehicle.maxFuelVolume}}</td>
+        <td>{{vehicle.hightAlertCount}}</td>
+    </tr>
+    </tbody>
+</table>

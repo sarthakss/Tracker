@@ -1,0 +1,35 @@
+{
+  "name": "sarthak",
+  "description": "ui project",
+  "main": "index.js",
+  "authors": [
+    "sarthak"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.9",
+    "bootstrap": "3.3.6",
+    "angular-route": "1.4.9",
+    "angular-messages": "1.4.9",
+    "angular-bootstrap": "1.3.2",
+    "angular-ui-router": "1.0",
+    "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "jquery": {
+      "main": []
+    }
+  }
+}

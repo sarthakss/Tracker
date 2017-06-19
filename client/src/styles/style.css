@@ -1,0 +1,39 @@
+/*tr.latest {
+    background: blue;
+    color: white;
+}*/
+
+table{
+    align:center;
+    background-color: white;
+}
+
+.nav{
+    background-color: white;
+}
+
+body{
+    background-color: #2b669a;
+}
+
+h1,h2{
+    text-align: center;
+    color:white;
+}
+
+
+
+img {
+    display: block;
+    width: 48px;
+    margin: 0 auto;
+}
+
+.errors p {
+    color: red;
+    margin-bottom: 0;
+}
+
+.table-row {
+    cursor:pointer;
+}
