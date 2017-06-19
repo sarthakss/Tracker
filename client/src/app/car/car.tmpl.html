@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+    <thead>
+    <tr ng-init="carVm.sorter='lastServiceDate'; carVm.sortOrder=false;">
+        <th> </th>
+        <th>Fuel Volume</th>
+        <th>VIN</th>
+        <th ng-click="carVm.sorter='year';carVm.sortOrder = !carVm.sortOrder;">Year</th>
+        <th>Make</th>
+        <th ng-click="carVm.sorter='model'; carVm.sortOrder = !carVm.sortOrder;">Model</th>
+        <th ng-click="carVm.sorter='lastServiceDate'; carVm.sortOrder = !carVm.sortOrder;">Last Service Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="table-row" ng-repeat="car in carData | filter: carVm.searchText | orderBy:carVm.sorter:carVm.sortOrder">
+        <td ng-click="goToGeolocation()" class="glyphicon glyphicon-map-marker "></td>
+        <td><a ui-sref="signalHistory({vinNumber: car.vin})" class="glyphicon glyphicon-stats"></a></td>
+        <td><a ui-sref="historicAlerts({vinNumber: car.vin})">{{car.vin}}</a></td>
+        <td>{{car.year}}</td>
+        <td>{{car.make}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.lastServiceDate | date:'medium'}}</td>
+    </tr>
+    </tbody>
+</table>

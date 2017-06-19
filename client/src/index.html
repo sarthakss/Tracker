@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="tracker">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- bower:css -->
+    <!-- endinject -->
+
+    <!-- vendor:css -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- app:css -->
+    <!-- endinject -->
+
+</head>
+
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation"><a ui-sref="carList">Car List</a></li>
+    <li role="presentation"><a ui-sref="highAlerts">High Alerts</a></li>
+</ul>
+<div ng-init="title = 'CarTracker'">
+    <br>
+    <h1>{{title}}</h1>
+    <br>
+    <div class="container">
+        <section ui-view>
+
+        </section>
+    </div>
+</div>
+
+<!-- bower:js -->
+<!-- endinject -->
+
+<!-- vendor:js -->
+<!-- endinject -->
+
+<!-- inject:js -->
+<!-- endinject -->
+
+<!-- app:js -->
+<!-- endinject -->
+</body>
+
+</html>
